@@ -1,0 +1,215 @@
+#scrolly{
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    z-index: -1;
+}
+#pullScreen{
+    position:absolute;
+    left: 275px;
+    top: 455px;
+    margin: auto;
+    height: 240px;
+    width: 1375px;
+    content:url(../images/TouchToScroll-Bar.png);
+    z-index:100;
+    display: none;
+}
+#blackOverlay{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1920px;
+    height:1080px;
+    opacity: .6;
+    background-color: black;
+    display: none;
+    z-index:1
+}
+
+#header {
+    position:absolute;
+    left:81px;
+    top:41px;
+}
+
+.scrollers:active {
+    box-shadow: 0 0 18px #FFFFFF;
+    border-radius: 40px;
+}
+/* SubHeads Positioning*/
+#ExploreHistoricalRecord {
+    position:absolute;
+    left:0px;
+    top:290px;
+}
+.SourceHeader {
+    position:absolute;
+    left:818px;
+    top:320px;
+    font-family: Georgia;
+    font-size: 24px;
+}
+
+.VerticalDivider {
+    border-left: thin solid #000000;
+    width: 1px;
+    height: 380px;
+    top:448px;
+    position:absolute;
+}
+#Column1HistoricalRecordDiv {
+     position:absolute;
+     left:140px;
+     top:480px;
+}
+#Column1Divider {
+    left:534px;
+}
+#Column1Divider2 {
+    left:539px;
+}
+#Column1ReadTheSource {
+    position:absolute;
+    left:234px;
+    top: 780px;
+}
+#Column2HistoricalRecordDiv {
+    position:absolute;
+    left:574px;
+    top:480px;
+}
+#Column2Divider {
+    left:974px;
+}
+#Column2Divider2 {
+    left:979px;
+}
+#Column2ReadTheSource {
+    position:absolute;
+    left:672px;
+    top: 780px;
+}
+#Column3HistoricalRecordDiv {
+    position:absolute;
+    left:1008px;
+    top:480px;
+}
+#Column3Divider {
+    left:1414px;
+}
+#Column3Divider2 {
+    left:1419px;
+}
+#Column3ReadTheSource {
+    position:absolute;
+    left:1110px;
+    top: 780px;
+}
+#Column4HistoricalRecordDiv {
+    position:absolute;
+    left:1446px;
+    top:480px;
+}
+#Column4ReadTheSource {
+    position:absolute;
+    left:1548px;
+    top: 780px;
+}
+
+.HistoricalRecordTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+.HistoricalRecord {
+    font-family: Georgia;
+    font-size: 17px;
+    height:260px;
+    width:360px;
+}
+
+.ReadTheSource{
+    content:url(../images/ReadTheSource-A.png);
+    z-index:100;
+}
+
+.ReadTheSource:active {
+    content:url(../images/ReadTheSource-B.png);
+}
+
+#SourceText {
+    position:absolute;
+    left:160px;
+    top: 450px;
+    width: 1600px;
+    height: 474px;
+    font-family: Georgia;
+    font-size: 24px;
+    overflow-y:auto;
+    padding-right:10px;
+}
+
+/* Footer Buttons */
+#ReturnToStory{
+    content:url(../images/ReturnToStory-A.png);
+    z-index:100;
+}
+
+#ReturnToStory:active {
+    content:url(../images/ReturnToStory-B.png);
+}
+
+#HistoricalRecord{
+    content:url(../images/ExploreHistoricalRecords-A.png);
+    z-index:100;
+}
+
+#HistoricalRecord:active {
+    content:url(../images/ExploreHistoricalRecords-B.png);
+}
+
+#ReturnToTimeline{
+    content:url(../images/HomeButton.png);
+    z-index:100;
+}
+
+#ReturnToTimeline:active {
+    box-shadow: 0 0 18px #000000;
+    border-radius: 30px;
+}
+#ReturnToHistoricalRecords{
+    content:url(../images/ReturnHistoricalRecords-A.png);
+    z-index:100;
+}
+
+#ReturnToHistoricalRecords:active {
+    content:url(../images/ReturnHistoricalRecords-B.png);
+}
+
+#HistoricalRecord{
+    content:url(../images/ExploreHistoricalRecords-A.png);
+    z-index:100;
+}
+
+#HistoricalRecord:active {
+    content:url(../images/ExploreHistoricalRecords-B.png);
+}
+
+/* Footer Positions */
+.ReturnToStoryDiv {
+    position:absolute;
+    right: 650px;
+    bottom: 60px;
+}
+.HistoricalRecordDiv {
+    position:absolute;
+    right: 150px;
+    bottom: 60px;
+}
+.HomeButtonDiv {
+    position:absolute;
+    right: 80px;
+    bottom: 60px;
+}
+

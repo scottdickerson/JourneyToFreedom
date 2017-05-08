@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="./css/Unit29.css">
+    <link rel="stylesheet" href="./css/CustomScroll.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./jquery/jquery-1.11.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Unit 29 -->
+    <script src="./js/Unit29.js"></script>
+
+    <title></title>
+
+</head>
+<body>
+<div style="position:relative; top:0px; left:0px" >
+
+    <div style="height:1080px; width:1920px; overflow:hidden">
+        <img src="images/ChildPages-Background.png" />
+    </div>
+
+    <div class="ExploreHistoricalRecordDiv">
+        <img id="ExploreHistoricalRecord" src="./images/Sub-ReadTheSource.png"/>
+    </div>
+
+    <div class="SourceHeader">
+        <b>Diaries of Benjamin Lundy</b>
+        <br/>
+        <i>The Life, Travels and Opinions of Benjamin Lundy, 1847</i>
+    </div>
+    <div id="SourceText">
+        <b>August 23, 1833</b>
+        <br/>
+        There lives here, in Bexar, a free black man, who speaks English. He came as a slave, first from North Carolina to Georgia, and then from Georgia to Nacogdoches, in Texas. There his master died, and the heirs sold him to another person. This new master, being apprehended for debt, offered the slave his freedom if he would take him out of prison. The slave complied, but the master dying soon after, an attempt was made by his heirs to re-enslave the man, which however proved unsuccessful. He now works as a blacksmith in this place…though he is jet-black, he says the Mexicans pay him the same respect as to other laboring people, there being no difference made here on account of colour. Padilla says it is the policy of the Mexican Government to unite all colours and treat all with respect.
+        <br/>
+        <br/>
+        <b>September 29, 1833</b>
+        <br/>
+        I walked out this forenoon with…Felipe Elua, a black Louisiana creole, who was formerly a slave, but who has purchased the freedom of himself and family. He has resided here twenty-six years and he now owns five or six houses and lots, besides a fine piece of land near town. He has educated his children so that they can read and write, and speak Spanish as well as French. They are all fine looking, smart black people. He has a sister also residing in Bexar, who is married to a Frenchman.
+    </div>
+
+    <div class="ReturnToStoryDiv">
+        <img id="ReturnToStory" src="./images/ReturnToStory-A.png" onClick="history.go(-2);return false;" />
+    </div>
+
+    <div class="HistoricalRecordDiv">
+        <img id="ReturnToHistoricalRecords" src="./images/ReturnToHistoricalRecords-A.png" onClick="history.back();return false;" />
+    </div>
+
+    <div class="HomeButtonDiv">
+        <img id="ReturnToTimeline" src="./images/HomeButton.png" onClick="history.go(-3);return false;" />
+    </div>
+</div>
+
+
+</body>
+</html>
