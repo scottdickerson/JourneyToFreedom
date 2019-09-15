@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./jquery/jquery-1.11.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Unit 29 -->
+    <script src="./js/Unit29.js"></script>
+    <script src="./js/Unit29Scroller.js"></script>
+
+    <title></title>
+    <link rel="stylesheet" href="./css/Unit29.css">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<a href="#" onClick="window.scrollLeft()">
+    <div id="leftclicky" class="scrollers" style="position:absolute; left: 53px; top: 533px;">
+        <img src="images/Arrow-Left.png"/>
+    </div>
+</a>
+<a href="#" onClick="window.scrollRight()">
+    <div id="rightclicky" class="scrollers" style="position:absolute; right: 53px; top: 533px;">
+        <img src="images/Arrow-Right.png"/>
+    </div>
+</a>
+<div id='scrolly'>
+    <div id='header'>
+        <img src="images/Header.png"/>
+    </div>
+    <img src="images/Intro-ParentPage.png" usemap="#titlemap"/>
+    <map name="titlemap">
+        <area shape="rect" coords="140,415,480,850" href="SlaveryAndTheLaw.html">
+        <area shape="rect" coords="660,415,1000,850" href="PrivilegedPositions.html">
+        <area shape="rect" coords="1190,415,1520,850" href="ClaimingFreedom.html">
+        <area shape="rect" coords="1575,250,2250,850" href="EmancipationAndReconstruction.html">
+        <area shape="rect" coords="2300,415,2650,850" href="AgainInChains.html">
+        <area shape="rect" coords="2830,415,3170,850" href="NothingButFreedom.html">
+        <area shape="rect" coords="3360,415,3700,850" href="FreeToLearn.html">
+        <area shape="rect" coords="3890,415,4240,850" href="FreedmensTowns.html">
+        <area shape="rect" coords="4410,415,4750,850" href="VotesToViolence.html">
+        <area shape="rect" coords="4930,415,5270,850" href="CivilRights.html">
+    </map>
+</div>
+<div id='pullScreen'>
+
+</div>
+<div id="blackOverlay">
+
+</div>
+<script>
+    var resetScroll = null;
+
+    resetScroll = setTimeout(window.scrollCenter, 10000);
+    $('#scrolly').on("touchend",function() {
+        $('.scrollers').show();
+    });
+    $('#scrolly').on("touchstart",function() {
+        $('.scrollers').hide();
+    });
+    $(window).on("touchstart", function() {
+        //If the screen is touched hide the pullscreen
+        if ($('#pullScreen').is(":visible")) {
+            togglePull();
+        }
+    })
+    $(window).on("touchend", function() {
+        if (pullScreenTimer) {
+            //Clear the pullscreentimer, and wait for the reset scroll to reset it
+            clearTimeout(pullScreenTimer);
+        }
+        if (resetScroll) {
+            clearTimeout(resetScroll);
+        }
+        resetScroll = setTimeout(window.scrollCenter, 10000)
+    })
+    //this is only for testing on a non touch computer
+    $('#scrolly').on("mouseup",function() {
+        $('.scrollers').show();
+    });
+    $('#scrolly').on("click",function() {
+        $('.scrollers').hide();
+    });
+    //this is only for testing on a non touch computer
+    $(window).on("click", function() {
+            //If the screen is touched hide the pullscreen
+            if ($('#pullScreen').is(":visible")) {
+                togglePull();
+            }
+    })
+    $(window).on("mouseup", function() {
+        if (pullScreenTimer) {
+            //Clear the pullscreentimer, and wait for the reset scroll to reset it
+            clearTimeout(pullScreenTimer);
+        }
+        if (resetScroll) {
+            clearTimeout(resetScroll);
+        }
+        resetScroll = setTimeout(window.scrollCenter, 10000)
+    })
+
+</script>
+</body>
+</html>
